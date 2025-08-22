@@ -5,7 +5,7 @@ if(!isset($_SESSION['stu_name']) && $_SESSION['stu_name']=='')
     header("location:index.php");
     exit;
 }
-$api_key='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';
+$api_key=''; //put your own api key
 
 $code=$_POST['code'];
 $language=$_POST['language'];
@@ -56,3 +56,4 @@ if (curl_errno($ch)) {
 // Close the cURL session
 curl_close($ch);
 ?>
+
